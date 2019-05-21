@@ -1,7 +1,7 @@
 import re
 
-text = open('sample.txt', 'rb')
-output = open('output.txt', 'w')
+text = open('large_7chars.txt', 'rb')
+output = open('large_x.txt', 'w')
 for text_x in text.readlines():
 	text_x = text_x.lower()
 	text_x = re.sub(r'[\W]', '', text_x)
